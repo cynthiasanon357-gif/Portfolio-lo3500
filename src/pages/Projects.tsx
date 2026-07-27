@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import '../components/Cards.css';
+import ProjectCard from '../components/ProjectCard';
 
 export default function Projects() {
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
@@ -46,6 +47,7 @@ export default function Projects() {
       <p style={{ marginBottom: '1.5rem' }}>
         Découvrez les réalisations et projets techniques développés par notre équipe.
       </p>
+      <ProjectCard />
 
       {/* Message / Bouton pour réinitialiser le filtre */}
       {selectedTag && (
