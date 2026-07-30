@@ -5,10 +5,27 @@ import '../components/Contact.css';
 export default function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    alert(`Merci ${formData.name}, votre message a bien été envoyé !`);
-    setFormData({ name: '', email: '', message: '' });
+    try {
+      const response = await fetch('http://localhost:3000/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        alert("Merci ! Votre message a bien été envoyé et enregistré.");
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        alert("Une erreur est survenue lors de l'envoi.");
+      }
+    } catch (error) {
+      console.error("Erreur de connexion au serveur:", error);
+      alert("Impossible de joindre le serveur.");
+    }
   };
 
   return (

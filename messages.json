@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "name": "Michel Danaika Claude",
+    "email": "micheldanaika@gmail.com",
+    "message": "salut",
+    "date": "2026-07-29T18:32:37.296Z"
+  },
+  {
+    "name": "Hosman Jean",
+    "email": "jeanfrancoishosman@gmail.com",
+    "message": "salut j ai un probleme",
+    "date": "2026-07-30T15:26:20.328Z"
+  },
+  {
+    "name": "Jean Claude Michel",
+    "email": "jeanclaudemichel@gmail.com",
+    "message": "je voudrais discuter avec un professionnel svp",
+    "date": "2026-07-30T15:34:24.632Z"
+  }
+]
