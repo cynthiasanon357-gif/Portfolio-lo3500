@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useTheme } from '../ThemeContext.jsx'; // Import du hook de thème
+import { useTheme } from '../ThemeContext'; // Import du hook de thème
 import { Link } from 'react-router-dom';
 
 export default function Navbar() {

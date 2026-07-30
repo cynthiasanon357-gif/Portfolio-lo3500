@@ -24,7 +24,7 @@ export default function ProjectCard() {
 
   return (
     <div style={{ padding: '2rem' }}>
-      <h2>Mes Projets GitHub (Équipe)</h2>
+      <h2>Nos Projets GitHub </h2>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1rem', marginTop: '1rem' }}>
         {repos.map((repo: any) => (
           <div key={repo.id} style={{ border: '1px solid #ccc', padding: '1rem', borderRadius: '8px', background: 'var(--card-bg, #fff)' }}>
